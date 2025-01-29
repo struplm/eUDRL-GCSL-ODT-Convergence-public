@@ -1,0 +1,9 @@
+#!/bin/bash
+
+experiments="f_dynamics h_dynamics z_dynamics oscilatinos tiny_gridworld tiny_gridworld_det_ODT reg_tiny_gridworld_ODT bandit_bounds reg_bandit_bounds discontinuity_boundary discontinuity_det"
+
+for ex in $experiments ; do 
+  echo "python main.py $ex donotshowfigs" 
+  python main.py $ex donotshowfigs;
+done
+
